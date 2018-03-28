@@ -1,0 +1,144 @@
+<head>
+	<meta charset="UTF-8">
+	<title>学生主界面</title>
+	<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+	<link rel="stylesheet" type="text/css" href="css/主页面.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+</head>
+<body >
+<div class="beijing">
+	<p style="background: blueviolet; color: chartreuse; font-family: 楷体; font-size: 40px; text-align: center;">欢迎来到**选课系统</p>
+		<div class="bei">
+			<h1 class="fl" style="font-family: 楷体; font-size: 25px;">课程浏览</h1>
+			<button class="fr" onclick="window.location.href='信息修改.html'">信息修改</button>
+		</div>
+		<div class="ding">
+			 <ul>
+			 	<li style="color: blue;">升降序
+			 	</s><input id="register" type="button" style=" width: 30px; border: solid 1px #FFFFFF;" value="↑&nbsp;↓" 
+			 		style="font-family: 楷体; color: red;" onclick="window.location.href='学生主界面.html'"> &nbsp;&nbsp;&nbsp;</li>
+			 	
+			 </ul>
+			 <button class="qingkong fr">清空</button>
+			 <button class="chaxun fr">查询</button>
+			<input type="text" width="12px" class="sousuo fr" placeholder="请输入教师或课程名" > 
+		</div>
+		
+		<div class="zhongjian"> 
+			<div class="zhongjian_top"> 
+				<table width="1364px" height="200" border="1">
+					<tr bgcolor="E4E5E7" align="center" >
+						<td width="50" height="50">
+						<input type="checkbox" onclick="checkall()" id="checkall">
+							
+						</td>
+						<td>
+							课程名
+						</td>
+						<td>课程号</td>
+						<td>教师名</td>
+						<td>学时</td>
+						<td>上课地点</td>
+						<td>上课时间</td>
+						<td width="250px">备注</td>
+					</tr>
+					<tr height="40" align="center"onmouseover="changeColor('tr4')" id="tr4" onmouseout="resetColor('tr4')">
+						<td align="center">
+							<input type="checkbox" name="4">
+						</td>
+						<td>概率论</td>
+						<td>0658</td>
+						<td>xiao六</td>
+						<td>18</td>
+						<td>北22</td>
+						<td>星期三</td>
+						<td></td>
+					</tr>
+					<tr height="40" align="center" onmouseover="changeColor('tr2')" id="tr2" onmouseout="resetColor('tr2')">
+						<td align="center">
+							<input type="checkbox" name="2">
+						</td>
+						<td>Java</td>
+						<td>0156</td>
+						<td>李四</td>
+						<td>18</td>
+						<td>北22</td>
+						<td>星期三</td>
+						<td></td>
+					</tr>
+					<tr height="40" align="center" onmouseover="changeColor('tr3')" id="tr3" onmouseout="resetColor('tr3')">
+						<td align="center">
+							<input type="checkbox" name="3">
+						</td>
+						<td>面向对象程序设计</td>
+						<td>0278</td>
+						<td>郑武</td>
+						<td>18</td>
+						<td>北22</td>
+						<td>星期三</td>
+						<td></td>
+					</tr>
+					
+					<tr height="40" align="center"  onmouseover="changeColor('tr1')" id="tr1" onmouseout="resetColor('tr1')">
+						<td align="center">
+							<input type="checkbox" name="1">
+						</td>
+						<td>数据结构</td>
+						<td>0127</td>
+						<td>张三</td>
+						<td>18</td>
+						<td>北22</td>
+						<td>星期三</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td height="40">
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td height="40">
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div class="zhongjian_down fl">
+			<button class="b1 fl"> </button>
+			<button class="b2 fl"> </button>
+			<p class="fl" style="margin-left: 10px;margin-right: 10px;margin-top: 5px"><span>第</span><input type="text" value="1" style="width: 50px">
+			<span>页，共一页</span></p>
+			<button class="b3 fl"> </button>
+			<button class="b4 fl"> </button>
+			<button class="b5 fl"> </button>
+			</div>
+		</div>
+		<div class="dibu fl">
+			
+		</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/主界面.js"></script>
+</body>
+</html>

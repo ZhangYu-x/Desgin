@@ -1,0 +1,130 @@
+.beijing{
+	
+	
+	background-color: #CDD9E6;
+}
+.bei{
+	height: 26px;
+	color: #535C8E;
+	border-bottom: 2px solid #E9EAEC;
+}
+.ding{
+	
+	height: 30px;
+	margin-left: 5px;
+	display: line;
+}
+.ding ul li{
+	float: left;
+	margin-left: 20px;
+	margin-top: 2px;
+}
+.s1{
+	width: 15px;
+	height: 15px;
+	background: url(../image/zhuyemian.png) 0 0;
+	display: inline-block;
+	vertical-align: middle;
+	color: black;
+}
+.s2{
+	width: 15px;
+	height: 15px;
+	background: url(../image/zhuyemian.png) -22px 0;
+	display: inline-block;
+	vertical-align: middle;
+	color: black;
+}
+.s3{
+	width: 16px;
+	height: 15px;
+	background: url(../image/zhuyemian.png) -52px 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.s4{
+	width: 16px;
+	height: 15px;
+	background: url(../image/zhuyemian.png) -72px 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.s5{
+	width: 14px;
+	height: 15px;
+	background: url(../image/zhuyemian.png) -94px 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.sousuo{
+	margin-top: 2px;
+	margin-right: 20px;
+	border: 2px solid #EFEFF1;
+}
+.chaxun{
+	background-color: green;
+	margin-right:  15px;
+	margin-top: 2px;
+	color: white;
+}
+.qingkong{
+	background-color: red;
+	margin-right:  15px;
+	margin-top: 2px;
+	color: white;
+}
+.zhongjian{
+	
+	height: 600px;
+	 
+	margin-left: 2px;
+}
+.zhongjian_top{
+	height: 562px;
+	 
+	background-color: #FFFFFF;
+}
+.zhongjian_down{
+	height: 30px;
+ 
+}
+.zhongjian_down{
+	
+	height: 30px;
+	 
+}
+.b1{
+	width: 30px;
+	height: 30px;
+	background: url(../image/zhuyemian.png) 0 -25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.b2{
+	width: 30px;
+	height: 30px;
+	background: url(../img/zhuyemian.png) -40px -25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.b3{
+	width: 30px;
+	height: 30px;
+	background: url(../img/zhuyemian.png) -80px -25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.b4{
+	width: 30px;
+	height: 30px;
+	background: url(../img/zhuyemian.png) -120px -25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.b5{
+	width: 30px;
+	height: 30px;
+	background: url(../img/zhuyemian.png) -160px -25px;
+	display: inline-block;
+	vertical-align: middle;
+}

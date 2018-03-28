@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>学生选课系统</title>
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="table">
+		<fieldset id="index" style="width:500px" align="center">
+			<legend style="font-family: '黑体';font-size: 30px;">用户登录</legend>
+			<p align="center" class="p1">
+				学生选课系统
+			</p>
+			<select id="select">
+				<option>管理员</option>
+				<option>教师</option>
+				<option>学生 </option>
+			</select>
+			<p>
+				<label for="user">用户名</label>
+				<input id="user" type="text" placeholder="请填写用户名">
+			</p>
+			<p>
+				<label for="password">密码&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input id="password" type="password">
+			</p>
+			<p>
+				<input id="denglu" type="button" value="登录" style="border-radius: 30px" onclick="deng()">
+				<input id="register" type="button" value="注册" onclick="window.location.href='login1.html'">
+			</p>
+		    </fieldset>
+		</div>
+		<script src="js/index.js"> 
+		</script>
+	</body>
+</html>

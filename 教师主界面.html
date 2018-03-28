@@ -1,0 +1,196 @@
+<head>
+	<meta charset="UTF-8">
+	<title>教师界面</title>
+	<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+	<link rel="stylesheet" type="text/css" href="css/主页面.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+</head>
+<body >
+<div class="beijing">
+		<p style="background: blueviolet; color: chartreuse; font-family: 楷体; font-size: 40px; text-align: center;">欢迎来到**选课系统</p>
+		<div class="bei">
+			<h1 class="fl" style="font-family: 楷体; font-size: 25px;">课程信息</h1>
+			<button class="fr" onclick="window.location.href='信息修改.html'">信息修改</button>
+		</div>
+		<div class="ding">
+			 <ul>
+			 	<li><img src="img/未命名-1_r2_c2.gif" style="margin-right: -16px;">
+			 	<s class="s1"></s><input id="register" type="button" style="width: 70px;border: solid 1px #FFFFFF;" value="课程添加" style="font-family: 楷体; color: red;"> &nbsp;&nbsp;&nbsp;</li>
+			 	<li><img src="img/未命名-1_r2_c10.gif" style="margin-right: -16px;"><a href="#"><s class="s2"></s>课程删除</a>&nbsp;&nbsp;&nbsp;</li>
+			 	<li><img src="img/未命名-1_r2_c6.gif" style="margin-right: -16px;"><a href="#"><s class="s3"></s>修改密码</a>&nbsp;&nbsp;&nbsp;</li>
+			 </ul>
+			 <button class="qingkong fr">清空</button>
+			 <button class="chaxun fr">查询</button>
+			<input type="text" width="12px" class="sousuo fr" placeholder="请输入要查询的课程名" > 
+		</div>
+		<div id="regi" title="课程添加"  style="background-color: #ededed;">
+			<span class="ui-icon-alert"></span>
+			<form action="#">
+     	  	  	<p>
+	     	  	<label for="user">课程名&nbsp;&nbsp;</label><br>
+     	  	  	<input id="user" type="text" ><span id="couser"></span>
+     	  	  </p>
+     	  	  <p>
+     	  	  	<label for="password">课程号&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+     	  	  	<input id="password" type="password" ><span id="copassword"></span>
+     	  	  </p>
+     	  	  <p>
+     	  	  	<label for="password">学时&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+     	  	  	<input id="password" type="password" ><span id="copassword"></span>
+     	  	  </p>
+     	  	  <p>
+     	  	  	<label for="password">上课地点&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+     	  	  	<select>
+     	  	  		<option>北22</option>
+     	  	  		<option>北20</option>
+     	  	  		<option>北17</option>
+     	  	  	</select>
+     	  	  </p>
+     	  	  <p>
+     	  	  	<label for="password">上课时间&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+     	  	  	<select>
+     	  	  		<option>星期一</option>
+     	  	  		<option>星期二</option>
+     	  	  		<option>星期三</option>
+     	  	  		<option>星期四</option>
+     	  	  		<option>星期五</option>
+     	  	  	</select>
+     	  	  </p>
+     	  	  <p>
+     	  	  	<label for="password">选课人数上限&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+     	  	  	<input id="password" type="password" ><span id="copassword"></span>
+     	  	  </p>
+     	  	  <p>
+				<label for="state">备注</label><br />
+				<textarea cols="30px" rows="3px"></textarea>
+			</p>
+     	  	  <p>
+     	  	  	<input style="text-align: center" type="button" value="完成" onclick="window.location.href='教师主界面.html'" >
+     	  	  </p>
+			</form>
+    
+		</div>
+		<div class="zhongjian"> 
+			<div class="zhongjian_top"> 
+				<table width="1364px" height="200" border="1">
+					<tr bgcolor="E4E5E7" align="center" >
+						<td width="50" height="50">
+						<input type="checkbox" onclick="checkall()" id="checkall">
+							
+						</td>
+						<td>
+							课程名
+						</td>
+						<td>课程号</td>
+						<td>学时</td>
+						<td>上课地点</td>
+						<td>上课时间</td>
+						<td>选课人数上限</td>
+						<td width="250px">备注</td>
+						<td>课程修改</td>
+					</tr>
+					<tr height="40" align="center"  onmouseover="changeColor('tr1')" id="tr1" onmouseout="resetColor('tr1')">
+						<td align="center">
+							<input type="checkbox" name="1">
+						</td>
+						<td>数据结构</td>
+						<td>0127</td>
+						<td>18</td>
+						<td>北22</td>
+						<td>星期三</td>
+						<td>80</td>
+						<td></td>
+						<td><button class="fr" onclick="window.location.href='课程修改.html'">课程修改</button></td>
+					</tr>
+					<tr height="40" align="center" onmouseover="changeColor('tr2')" id="tr2" onmouseout="resetColor('tr2')">
+						<td align="center">
+							<input type="checkbox" name="2">
+						</td>
+						<td>离散数学</td>
+						<td>0254</td>
+						<td>27</td>
+						<td>北22</td>
+						<td>星期一</td>
+						<td>80</td>
+						<td></td>
+						<td><button class="fr" onclick="window.location.href='课程修改.html'">课程修改</button></td>
+					</tr>
+					<tr height="40" align="center" onmouseover="changeColor('tr3')" id="tr3" onmouseout="resetColor('tr3')">
+						<td align="center">
+							<input type="checkbox" name="3">
+						</td>
+						<td>电路与电子学</td>
+						<td>0356</td>
+						<td>27</td>
+						<td>北22</td>
+						<td>星期四</td>
+						<td>80</td>
+						<td></td>
+						<td><button class="fr" onclick="window.location.href='课程修改.html'">课程修改</button></td>
+					</tr>
+					<tr height="40" align="center"onmouseover="changeColor('tr4')" id="tr4" onmouseout="resetColor('tr4')">
+						<td align="center">
+							<input type="checkbox" name="4">
+						</td>
+						<td>Linux</td>
+						<td>0514</td>
+						<td>9</td>
+						<td>北22</td>
+						<td>星期五</td>
+						<td>80</td>
+						<td></td>
+						<td><button class="fr" onclick="window.location.href='课程修改.html'">课程修改</button></td>
+					</tr>
+					<tr>
+						<td height="40">
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td height="40">
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div class="zhongjian_down fl">
+			<button class="b1 fl"> </button>
+			<button class="b2 fl"> </button>
+			<p class="fl" style="margin-left: 10px;margin-right: 10px;margin-top: 5px"><span>第</span><input type="text" value="1" style="width: 50px">
+			<span>页，共一页</span></p>
+			<button class="b3 fl"> </button>
+			<button class="b4 fl"> </button>
+			<button class="b5 fl"> </button>
+			</div>
+		</div>
+		<div class="dibu fl">
+			
+		</div>
+
+	</div>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/主界面.js"></script>
+</body>
+</html>

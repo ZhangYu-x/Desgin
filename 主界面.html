@@ -1,0 +1,179 @@
+<head>
+	<meta charset="UTF-8">
+	<title>管理员页面</title>
+	<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+	<link rel="stylesheet" type="text/css" href="css/主页面.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+</head>
+<body >
+<div class="beijing">
+		<p style="background: blueviolet; color: chartreuse; font-family: 楷体; font-size: 40px; text-align: center;">欢迎来到**选课系统</p>
+		<div class="bei">
+			<h1 class="fl" style="font-family: 楷体; font-size: 25px;">用户审核</h1>
+			<button class="fr" onclick="window.location.href='信息修改.html'">信息修改</button>
+		</div>
+		<div class="ding">
+			 <ul>
+			 	<li><img src="img/未命名-1_r2_c2.gif">
+			 	<s class="s1"></s><input id="register" type="button" style="width: 70px ; height：15px; border: solid 1px #FFFFFF;margin-left: -18px;" value="添加用户" style="font-family: 楷体; color: red;"> &nbsp;&nbsp;&nbsp;</li>
+			 	<li><img src="img/未命名-1_r2_c4.gif" style="margin-right: -16px;"><a href="#"><s class="s2"></s>教师教务查询</a>&nbsp;&nbsp;&nbsp;</li>
+			 	<li><img src="img/未命名-1_r2_c4.gif" style="margin-right: -16px;"><a href="#"><s class="s3"></s>修改密码</a>&nbsp;&nbsp;&nbsp;</li>
+			 	<li><img src="img/未命名-1_r2_c8.gif" style="margin-right: -16px;"><a href="#"><s class="s4"></s>财务查询</a>&nbsp;&nbsp;&nbsp;</li>
+			 	<li><img src="img/未命名-1_r2_c8.gif" style="margin-right: -16px;"><a href="#"><s class="s5"></s>禁用人员</a></li> 
+			 </ul>
+			 <button class="qingkong fr">清空</button>
+			 <button class="chaxun fr">查询</button>
+			<input type="text" width="12px" class="sousuo fr" placeholder="请输入要查询的用户名" > 
+		</div>
+		<div id="regi" title="用户注册"  style="background-color: #ededed;">
+			<span class="ui-icon-alert"></span>
+			<form action="#">
+     	  	  	<p>
+	     	  	<label for="user">用户名&nbsp;&nbsp;</label><br>
+     	  	  	<input id="user" type="text" ><span id="couser"></span>
+     	  	  </p>
+     	  	  <p>
+     	  	  	<label for="password">密码&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+     	  	  	<input id="password" type="password" ><span id="copassword"></span>
+     	  	  </p>
+     	  	  <p>
+     	  	  	<input style="text-align: center" type="button" value="完成" onclick="window.location.href='主界面.html'" >
+     	  	  </p>
+			</form>
+    
+		</div>
+		<div class="zhongjian"> 
+			<div class="zhongjian_top"> 
+				<table width="1364px" height="200" border="1">
+					<tr bgcolor="E4E5E7" align="center" >
+						<td width="50" height="50">
+						<input type="checkbox" onclick="checkall()" id="checkall">
+							
+						</td>
+						<td>
+							用户姓名
+						</td>
+						<td>登陆名</td>
+						<td>角色</td>
+						<td>出生日期</td>
+						<td>性别</td>
+						<td>手机号</td>
+						<td>QQ邮箱</td>
+						<td>用户信息修改</td>
+					</tr>
+					<tr height="40" align="center"  onmouseover="changeColor('tr1')" id="tr1" onmouseout="resetColor('tr1')">
+						<td align="center">
+							<input type="checkbox" name="1">
+						</td>
+						<td>张三</td>
+						<td>tea1</td>
+						<td>教师</td>
+						<td>1887/10/25</td>
+						<td>男</td>
+						<td>12345678925</td>
+						<td>1654548556@qq.com</td>
+						<td style="margin: auto;"><button class="fr" onclick="window.location.href='信息修改.html'">信息修改</button></td>
+					</tr>
+					<tr height="40" align="center" onmouseover="changeColor('tr2')" id="tr2" onmouseout="resetColor('tr2')">
+						<td align="center">
+							<input type="checkbox" name="2">
+						</td>
+						<td>李四</td>
+						<td>stu1</td>
+						<td>学生</td>
+						<td>1997/6/2</td>
+						<td>男</td>
+						<td>12345678925</td>
+						<td>1654548556@qq.com</td>
+						<td><button class="fr" onclick="window.location.href='信息修改.html'">信息修改</button></td>
+					</tr>
+					<tr height="40" align="center" onmouseover="changeColor('tr3')" id="tr3" onmouseout="resetColor('tr3')">
+						<td align="center">
+							<input type="checkbox" name="3">
+						</td>
+						<td>王五</td>
+						<td>stu2</td>
+						<td>学生</td>
+						<td>1998/11/5</td>
+						<td>女</td>
+						<td>12345678925</td>
+						<td>1654548556@qq.com</td>
+						<td><button class="fr" onclick="window.location.href='信息修改.html'">信息修改</button></td>
+					</tr>
+					<tr height="40" align="center"onmouseover="changeColor('tr4')" id="tr4" onmouseout="resetColor('tr4')">
+						<td align="center">
+							<input type="checkbox" name="4">
+						</td>
+						<td>许六</td>
+						<td>tea</td>
+						<td>教师</td>
+						<td>1880/2/30</td>
+						<td>男</td>
+						<td>12345678925</td>
+						<td>1654548556@qq.com</td>
+						<td align="center"><button class="fr" onclick="window.location.href='信息修改.html'">信息修改</button></td>
+					</tr>
+					<tr>
+						<td height="40">
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td height="40">
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td height="40">
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div class="zhongjian_down fl">
+			<button class="b1 fl"> </button>
+			<button class="b2 fl"> </button>
+			<p class="fl" style="margin-left: 10px;margin-right: 10px;margin-top: 5px"><span>第</span><input type="text" value="1" style="width: 50px">
+			<span>页，共一页</span></p>
+			<button class="b3 fl"> </button>
+			<button class="b4 fl"> </button>
+			<button class="b5 fl"> </button>
+			</div>
+		</div>
+		<div class="dibu fl">
+			
+		</div>
+
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/主界面.js"></script>
+</body>
+</html>

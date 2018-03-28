@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>学生注册</title>
+		<link href="css/login2.css" rel="stylesheet" type="text/css">
+		
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+	</head>
+	<body>
+		<div>
+			<fieldset id="kuang" style="background: url(img/timg.jpg);">
+				<legend style="font-family:楷体 ">学生注册</legend>
+				<input id="register1" type="button" value="教师注册" onclick="window.location.href='login1.html'"
+					style="font-family: 楷体;">
+				<input id="register1" type="button" value="学生注册" style="color: #0000FF;font-family: 楷体;">
+				
+				<p>
+				<label for="user">用户名&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input id="user" type="text" placeholder="请填写用户名" onblur="onuser()">
+				<span id="couser"></span>
+			</p>
+			<p>
+				<label for="password">密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input id="password" type="password" onblur="onpa()">
+				<span id="copassword"></span>
+			</p>
+			<p>
+				<label for="repassword">确认密码</label>
+				<input id="repassword" type="password" onblur="onrepa()">
+				<span id="corepassword"></span>
+			</p>
+			<p>
+				<label for="reaname">真实姓名</label>
+				<input id="reaname" type="reaname">
+				<span id="coreaname"></span>
+			</p>
+			<p>
+				<label for="born">出生日期</label>
+				<input id="born" type="text">
+				<span id="coborn"></span>
+			</p>
+			<p>
+				<label for="sex">性别</label>
+				<input type="radio" name="sex" />男
+				<input type="radio" name="sex" />女
+			</p>
+			<p>
+				<label for="tenumber">手机号码</label>
+				<input id="tenumber" type="tenumber" onblur="onte()">
+				<span id="cotenumber"></span>
+			</p>
+			<p>
+				<label for="qq">QQ邮箱&nbsp;&nbsp;</label>
+				<input id="qq" type="qq" onblur="onqq()">
+				<span id="coqq"></span>
+			</p>
+			<p>
+				<label for="state">备注</label><br />
+				<textarea cols="50px" rows="3px"></textarea>
+			</p>
+			<input type="button" value="提交" onclick="window.location.href='index.html'"/>
+			</fieldset>
+		</div>
+		
+		<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script src="js/login.js"></script>
+	</body>
+</html>
